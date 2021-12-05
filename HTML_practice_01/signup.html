@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/html_icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/html_icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/html_icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/html_icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/html_icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/html_icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/html_icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/html_icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/html_icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/html_icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/html_icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/html_icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/html_icon/favicon-16x16.png">
+    <link rel="manifest" href="assets/html_icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Sign up</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="HTML_article.html">Return to HTML article</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Create your account</legend>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="name" required autofocus>
+                </div>
+
+                <div>
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" placeholder="surname" required>
+                </div>
+
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="username" required minlength="3" maxlength="30">
+                </div>
+
+                <div>
+                    <label for="birthday_date">Date of birth</label>
+                    <input type="date" id="birthday_date" required>
+                </div>
+
+                <div>
+                    <label for="birthday_time">Time</label>
+                    <input type="time" id="birthday_time" required>
+                </div>
+
+                <div>
+                    <label for="profile_color">Profile color</label>
+                    <input type="color" id="profile_color">
+                </div>
+
+                <div>
+                    <label for="years_experience">Years of experience as a web developer</label>
+                    <input type="number" id="years_experience" placeholder="experience">
+                </div>
+
+                <div>
+                    <label for="role">Role</label>
+                    <select name="role" id="role">
+                        <option selected>I'm still learning!</option>
+                        <option>Front-end</option>
+                        <option>Back-end</option>
+                        <option>Full-stack</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="language">Pick a language</label>
+                    <input id="language" list="languages">
+                    <datalist id="languages">
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>JavaScript</option>
+                        <option>PHP</option>
+                        <option>Ruby</option>
+                        <option>Python</option>
+                        <option>Java</option>
+                        <option>C++</option>
+                        <option>C#</option>
+                    </datalist>
+
+                    <label for="framework">Pick a framework</label>
+                    <input id="framework" list="frameworks">
+                    <datalist id="frameworks">
+                        <option>React</option>
+                        <option>Vue</option>
+                        <option>Angular</option>
+                        <option>Laravel</option>
+                        <option>Ruby on Rails</option>
+                        <option>Flask</option>
+                        <option>Django</option>
+                        <option>Spring</option>
+                        <option>.NET</option>
+                    </datalist>
+                </div>
+
+                <div>
+                    <label for="self_qualify">How would you qualify your skills from 1 to 10?</label>
+                    <input type="number" id="self_qualify" min="1" max="10">
+                </div>
+
+                <div>
+                    <label for="description">Add a description</label>
+                    <textarea id="description" placeholder="description" rows="5" cols="30" style="resize:none"></textarea>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="...@example.com" required>
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="password" required minlength="10">
+                </div>
+
+                <div>
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+
+            </fieldset>
+        <!--
+        Items
+
+        - Name
+        - Surname
+        - Username
+        - Date of birthday (with year)
+        - Profile photo color
+        - Years of experience as a web developer (number)
+        - Select your job (datalist frontend, backend, etc)
+        - How would you qualify yourself from 1 to 10? (range)
+        - Add a description (textarea)
+
+        - Email
+        - Password
+
+        - Submit and Reset buttons
+
+
+        Already have an account?
+         -->
+
+        </form>
+        <a href="login.html">Already have an account?</a>
+    </main>
+</body>
+</html>
